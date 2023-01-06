@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MachineGaming</title>
+    <link rel="shortcut icon" href="../../../assets/MachineGaming.svg">
+    <script src="https://kit.fontawesome.com/9a1eb3ff66.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="../../components/Header-Footer/styles.css">
+    <link rel="stylesheet" href="../../../style.css">
+</head>
+<body>
+    <!--COLOCAR FOTOS NA PASTA ASSETS-->
+    <header>
+        <section id="nav"></section>
+    </header>
+
+    <main>
+        <div class="container" onclick="change1(false)" onmousedown="change2(false)">
+            <!--COLOCAR SEU COMPONENTE AQUI-->
+            <h1> SEU CARRINHO </h1>
+
+            <div id="main-container">
+          
+              <div class="carrinho-container">
+                <div id="itensDoCarrinho">                    
+                </div>                
+                <div class="segunda-linha">
+                  <label class="label-container">
+                    <input type="checkbox" checked="checked"></input>
+                    <span class="checkmark"></span> Este produto é um presente?
+                  </label>
+                  <i class="fa-sharp fa-solid fa-circle-question"></i>
+                </div>
+                <div class="terceira-linha">
+                  <p>CÓDIGOS PROMOCIONAIS E CARTÕES-PRESENTE</p>
+                </div>
+                <div class="quarta-linha">
+                  <label>DIGITE O SEU CÓDIGO</label>
+                  <input type="text" placeholder="" id="cupom">
+                  <input style="cursor: pointer;" type="submit" value="APLICAR" onclick="descontar()">
+                </div>
+              </div>
+              <div class="linha">
+                <div class="preco">
+                  <h4>RESUMO DO PEDIDO</h4>
+                  <div class="espaco">
+                    <p>PREÇO</p>
+                    <p>R$<span id="preco-total-semdisc"></span> BRL</p>
+                  </div>
+                  <div class="espaco">
+                    <p>TOTAL</p>
+                    <p class="cor">R$<span id="total-preco"></span> BRL</p>
+                  </div>
+                  <input type="submit" style="cursor: pointer;" value="PAGAR" class="pagar"></input>
+                  <p>Ao Clicar Em “pagar”, Você Aceita &nbsp;&nbsp;&nbsp;&nbsp;Nossa Politica De Reembolso</p>
+                </div>
+                <div>
+                    <h2 style="margin-left: 30px; margin-bottom: -10px; margin-top: 10px;">NÓS ACEITAMOS</h2>
+                    <div class="cartao">
+                      <img src="https://cdn.discordapp.com/attachments/770739423066980363/1057422631395131392/image.png">
+                    </div>
+                </div>
+              </div>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <section id="footer"></section>
+    </footer>
+    <script defer src="script.js"></script>
+    <script type="module" src="app.js"></script>
+    <script src="../../components/Header-Footer/script.js"></script>
+    <script defer>
+        function removerItem(cont){
+            let carrinho = JSON.parse(localStorage.getItem("Carrinho")||"[]")
+            console.log(carrinho)
+            carrinho.pop(cont)
+            localStorage.removeItem("Carrinho")
+            localStorage.setItem("Carrinho", JSON.stringify(carrinho))
+            document.location.reload(true)
+        }
+    function descontar() {
+        let cupom = document.getElementById("cupom")
+        let desconto = 1
+        if (cupom.value == "TRABALHOSPI15") {
+            desconto = 0.85
+        }
+        if (cupom.value == "PAULOLINDO") {
+            desconto = 0.50
+        }
+        var textoteste = document.getElementById("preco-total-semdisc")
+        var textotestetotal = document.getElementById("total-preco")
+        let valor = parseFloat(textoteste.innerText.replace(",","."))
+        valor *= desconto
+        textotestetotal.innerHTML = valor.toFixed(2).replace(".",",")
+    }
+    </script>
+</body>
+</html>

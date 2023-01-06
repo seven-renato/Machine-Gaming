@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MachineGaming</title>
+    <link rel="shortcut icon" href="../../../assets/MachineGaming.svg">
+    <script src="https://kit.fontawesome.com/9a1eb3ff66.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="../../components/Header-Footer/styles.css">
+    <link rel="stylesheet" href="../../../style.css">
+</head>
+<body>
+    <!--COLOCAR FOTOS NA PASTA ASSETS-->
+    <header>
+        <section id="nav"></section>
+    </header>
+
+    <main onclick="change1(false)" onmousedown="change2(false)">
+        <div class="container">
+            <!--COLOCAR SEU COMPONENTE AQUI-->
+            <div id="main-container">
+                <h2>INSIRA SEU E-MAIL PARA RECUPERAR SUA SENHA</h2>
+                <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Não se preocupe, insira o seu e-mail que lhe enviaremos as instruções para redefinir sua senha.</p>
+                <input type="email" placeholder="E-MAIL" class='email'></input>
+                <input type="submit" value="RECUPERAR" class="recuperar"></input>
+            </div>            
+            <div class="entrar">
+                <h5>Retorne para Entrar na sua conta</h5>
+                <input type="submit" id="btn-submit-teste" value ="ENTRAR" class="botao" ></input>
+            </div>            
+        </div>
+    </main>
+
+    <footer>
+        <section id="footer"></section>
+    </footer>
+    <script defer src="script.js"></script>
+    <script src="../../components/Header-Footer/script.js"></script>
+</body>
+</html>
