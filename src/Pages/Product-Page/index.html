@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MachineGaming</title>
+    <link rel="shortcut icon" href="../../../assets/MachineGaming.svg">
+    <script src="https://kit.fontawesome.com/9a1eb3ff66.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="../../components/Header-Footer/styles.css">
+    <link rel="stylesheet" href="../../../style.css">
+</head>
+<body onload="funcionar()">
+    <!--COLOCAR FOTOS NA PASTA ASSETS-->
+    <header>
+        <section id="nav"></section>
+    </header>
+
+    <main onclick="change1(false)" onmousedown="change2(false)">
+        <div class="container">
+            <!--COLOCAR SEU COMPONENTE AQUI-->
+            <div class="product-container">
+                <section id="main-container">
+                    <div class="primeiro-quadrado">
+                      <div class="fotos">
+                        <div class="fotos-pequenas">
+                          <img style="cursor: pointer;" width="152px" height="131px" id="image1" src="../../../assets/Jogos/.png">
+                        </div>
+                        <div class="fotos-pequenas">
+                          <img style="cursor: pointer;" width="152px" height="131px" id="image2" src="image 7.png">
+                        </div>
+                        <div class="fotos-pequenas">
+                          <img style="cursor: pointer;" width="152px" height="131px" id="image3" src="image 8.png">
+                        </div>
+                      </div>  
+                      <div class="fotos-grande">
+                        <img id="main-img">
+                      </div>    
+                    </div>
+                    <h4>Descrição</h4>
+                    <div class="descricao">
+                      <p id="descricao"></p>
+                      <br>
+                      <h5>Características</h5>
+                      <ul id="caracteristicas" style="color: white;">
+                        
+                      </ul>                      
+                    </div> 
+                    <h3>Comentários</h3>
+                    <div class="perguntas">
+                      <label>INSIRA SEU COMENTÁRIO SOBRE O PRODUTO!</label>
+                      <br>
+                      <input type="text" class="mensagem" style="padding: 5px 20px"></input>
+                      <div class="comentario">
+                        <h5 align="right" style="color: green; cursor: pointer;" onclick="falaroi()">Enviar comentario</h5>
+                        <div class="comentarios">                          
+                          <img src="../../../assets/background.png" style="height: 100px; width: 100px;" alt="">
+                          <div>
+                            <p class="data" style="width: 200px; margin-left: 0px; font-size: 17px;">Feito em 14/11/22</p>
+                            <div class="nomes">
+                              <p class="nome">Paulo Renato</p>                              
+                            </div>
+                            <p  class="paragrafo">
+                              adsdsaasdjklasdjasjasdasdkljsdkladskjsddksajlskklasdjaldskjlskjl
+                              daskljasdjasdjkladskjlsdjksdjksdkjldskljdskljsdkljsdjdskljdkjljjasdl
+                              adslkjlsdkjkdjsjklsdakljdsljsdkdjsdskjlksdjkdsjalkdsjsdkjsdkljsdjsd.
+                            </p>
+                          </div>           
+                        </div>    
+                                         
+                    </div> 
+                  </section>
+                  <section id="container-pequeno">
+                    <div class="preco">
+                      <div class="preto">
+                        <div id="linha-vertical"></div>
+                        <p id="nome-jogo"><br></p>
+                      </div>
+                      <h3 style="margin-top: 50px;">Em Estoque</h3>
+                      <div class="entrega">
+                        <i style="margin-top: 10px; font-size: 1.3rem; display: none;" class="fa-solid fa-truck"></i></i>
+                        <p class="entrega-palavras">Será entregue em até 24 horas!</p>
+                       </div>
+                      <div class="botoes">
+                        <button onclick="addCart()" type="submit"><h5>Adicionar ao carrinho</h5></button>
+                        
+                      </div> 
+                    </div> 
+                    <h3 class="det">Detalhes</h3>
+                    <div class="detalhes">
+                      <ul id="detalhes" class="detalhe-p">
+                        
+                      </ul>                      
+                    </div>
+                    <p class="palavra-verdes">Gênero:</p>
+                    <div id="genero" class="genero">
+                     
+                    </div>
+                    <p class="palavra-verdes">Modos De Jogos</p>
+                    <div id="modo_de_jogo" class="modo_de_jogo">
+                      
+                    </div> 
+                    <p class="palavra-verdes">Idiomas</p>
+                    <div id="idioma" class="idioma">                     
+                    </div>
+                  </section>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <section id="footer"></section>
+    </footer>
+    <script defer src="script.js"></script>
+    <script type="module" src="app.js"></script>
+    <script src="../../components/Header-Footer/script.js"></script>
+</body>
+</html>

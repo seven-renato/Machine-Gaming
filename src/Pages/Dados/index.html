@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MachineGaming</title>
+    <link rel="shortcut icon" href="../../../assets/MachineGaming.svg">
+    <script src="https://kit.fontawesome.com/9a1eb3ff66.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="../../components/Header-Footer/styles.css">
+    <link rel="stylesheet" href="../../../style.css">
+</head>
+<body>
+    <!--COLOCAR FOTOS NA PASTA ASSETS-->
+    <header>
+        <section id="nav"></section>
+    </header>
+
+    <main>
+        <div class="container" onclick="change(false)">
+            <!--COLOCAR SEU COMPONENTE AQUI-->
+            <h1 class="dados">MEUS DADOS PESSOAIS</h1>
+            <section>
+                <div>
+                    <label>Nome Completo</label>
+                    <input  id="nameDoUsuario" type="text">
+                </div>
+                <div>
+                    <label>Data De Nascimento</label>
+                    <input id="birth" type="text">
+                </div>
+                <div>
+                    <label>CPF</label>
+                    <input id="cpf" type="text">
+                </div>
+                <div>
+                    <label>Celular</label>
+                    <input id="celular" type="text">
+                </div>
+                <div>
+                    <label>E-mail</label>
+                    <input id="email" type="text">
+                </div>
+               
+                <!-- <button>
+                    <div class="cadeado"><i class="fa-solid fa-lock-keyhole"></i></div>
+                    <div class="texto_do_botao">
+                        <p><font color="#00B031">ALTERAR SENHA</font></p>
+                        <p>Será enviado um e-mail para você</p>
+                    </div>
+                </button> -->
+
+                <button style="cursor: pointer;" onclick="alterarDados()" style="margin-top:20px;"class="salvar">SALVAR</button>
+            </section>
+        </div>
+    </main>
+
+    <footer>
+        <section id="footer"></section>
+    </footer>
+    <script src="script.js"></script>
+    <script src="../../components/Header-Footer/script.js"></script>
+</body>
+</html>

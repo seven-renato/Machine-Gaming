@@ -1,0 +1,108 @@
+:root {
+    --main-green-color: #00B031;
+    --bg-gray-color: #30332D;
+    --price-gray-color: #d9d9d9;
+}
+
+main * {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;    
+    border: none;
+    outline: none;
+}
+
+main body {
+    background-image: url("fundo 1.png");    
+    font-family: 'Poppins', sans-serif;
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-left: 20%;
+    
+}
+
+main header {
+    width: 800px;
+    cursor: pointer;
+}
+
+main .per{
+    color:#00B031;
+    font: normal 18pt;
+    font-weight: 700;
+    font-size: 50px;
+    margin-bottom: 10px;
+}
+
+
+
+main .accordion{
+    max-width: 840px;
+    margin: 0 15px;
+    padding: 30px;
+    border-radius: 2px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: #25262C;
+    height: 500px;
+    padding-top: 30px;
+     
+}
+
+main  .title{
+    font-weight: 700;
+    font-size: 20px;
+}
+
+
+
+main .um{
+    gap: 30px;
+}
+main  .dois{
+    gap: 47px;
+}
+
+main  .tres{
+    gap: 5px;
+}
+
+main .quatro{
+    gap: 225px;
+}
+main  .accordion .accordion-content{
+    margin: 10px 0;
+    border-radius: 4px;
+    background: #ffffff;
+    overflow: hidden;
+}
+
+main  .accordion-content.open{
+    padding-bottom: 10px;
+}
+main .accordion-content.open i{
+    transform: rotate(180deg);
+}
+
+main .description{
+    text-align: center;
+}
+
+
+
+main .accordion-content header{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    min-height: 50px;
+    
+}
+
+main .fa-caret-down {
+    margin-left: 50px;
+    font-size: 24px;
+    color: green;
+}

@@ -1,0 +1,66 @@
+main {
+    color: white;    
+
+}
+
+main h1,h2,h3{
+    color:#00B031;
+    justify-content: center;
+    
+}
+
+.main-container {
+    background-color: var(--bg-gray-color);
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 20px 100px 100px 100px;
+}
+
+.row-input {
+    background-color: rgb(30, 30, 30);
+    width:200%;
+    border: #00B031 1px solid;
+    padding: 10px;
+    cursor: pointer;
+}
+
+.opcoes {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    flex-direction: column;
+}
+
+main img {
+    height: 145px;
+    width: 145px;
+    border-radius: 50%;
+}
+
+.perfil {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 60px;
+    margin-bottom: 80px;
+
+}
+
+input[type="file"] {
+    display: none;
+}
+
+label {
+    color: #FFF;
+    background-color: #333;
+    text-transform: uppercase;
+    text-align: center;
+    display: block;
+    margin-top: 30px;
+    cursor: pointer;
+    margin-right: 250px;
+}

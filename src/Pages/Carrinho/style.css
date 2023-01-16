@@ -1,0 +1,393 @@
+h1{
+    margin-left: 50px;
+    margin-bottom: 0px;
+    color:#00B031;
+    font-size: 50px;
+  }
+  
+  #main-container{
+    display: flex;
+    flex-direction: row;
+    margin-left: 50px;
+    height: auto;
+    padding: 40px;
+    width: 1358px;
+    margin-left: -10px;
+    background: #25262C;
+    border-radius: 2px;
+    color: white;
+    overflow: auto;
+  } 
+  
+  .primeira-linha + .primeira-linha {
+    margin-top: 10px;
+  }
+
+  #main-container .carrinho-container{
+    display: flex;
+    flex-direction:column;
+    flex-wrap: nowrap;
+    width: 897px;
+    height: 130px;
+  }
+  
+  #main-container .carrinho-container img{
+    padding: 0px 15px 0px 0px;
+    height: 130px;
+  }
+  
+  #main-container .primeira-linha{
+    display: flex;
+    gap:30px;
+    align-items: center;
+  }
+  
+   #main-container h3{
+    color: #FFFF;
+  }
+  
+  #main-container .segunda-linha{
+    display: flex;
+    flex-direction: row;
+    align-content: flex-start;
+    width: 900px;
+    margin-top:10px;
+    padding: 25px 0px 10px 20px;
+    color:white;
+    background: #171718;
+    border-radius: 10px;
+  }
+  
+  
+  #main-container button{
+    width:20px;
+    height:20px;
+    border-radius: 10px;
+    padding: 3px;
+    color:black;
+    background-color: green;
+    border:none;
+    cursor:pointer;
+  }
+  
+  /* Aqui a mensagem ja está com o display none para já começar escondida*/
+  .mensagem{
+    display:none;
+    padding: 7px;
+    margin:-70px 30px;
+    width:380px;
+    height:150px;
+    border:1px solid white;
+    color: white;
+    background-color: #171718;
+  }
+
+
+  /* Estilização checkbox */
+  .label-container {
+    display: block;
+    position: relative;
+    padding-left: 30px;
+    margin-bottom: 12px;
+    margin-right: 10px;
+    cursor: pointer;
+    font-size: 20px;
+    color: #fff;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+  }
+  
+  /* Esconder a checkbox mal-feita padrão*/
+  .label-container input {
+    display: none;
+    /* position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0; */
+  }
+  
+  /* Criando uma nova customização */
+  .checkmark {
+    position: absolute;
+    top: 5px;
+    left: 0;
+    height: 20px;
+    width: 20px;
+    background-color: #ffff;
+    border-radius: 10px;
+    
+  }
+  
+  /* Com o mouse em cima dar efeito de hover */
+  .label-container:hover input ~ .checkmark {
+    background-color: #ccc;
+  }
+  
+  /* Aqui que muda a cor de quando está com check */
+  .label-container input:checked ~ .checkmark {
+    background-color: green;
+  }
+  
+  /* vezinho branco no meio qnd está clickado */
+  .checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+  }
+  
+  /* pra mostrar o vezinho */
+  .label-container input:checked ~ .checkmark:after {
+    display: block;
+  }
+  
+  /* estilizando o vezinho de check se quiser podemos trocar */
+  .label-container .checkmark:after {
+    left: 8px;
+    top: 2px;
+    width: 5px;
+    height: 10px;
+    border: solid white;
+    border-width: 0 3px 3px 0;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+  }
+  
+  #main-container .terceira-linha > p{
+    width: 838px;
+    margin: 20px 0px 20px 0px;
+    font-family: 'Poppins';
+    font-size: 36px;
+    text-align: center;
+    letter-spacing: -0.01em;
+    color: #F9F9F9;
+    }
+  
+  #main-container .quarta-linha{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content:space-around;
+    padding: 15px;
+    background: #171718;
+    border-radius: 10px;
+  }
+  
+  input[type="text"]{
+    width: 340px;
+    height: 41px;
+    background: #D9D9D9;
+    border-radius: 10px;
+    padding-left: 10px;
+    font-size: 15px;
+  }
+  
+  label{
+    color: white;
+    font-size: 24px;
+  }
+  
+   input[type="submit"]{
+    background-color: #00B031;
+    color: white;
+    border-radius: 10px;
+    width: 94px;
+    height: 42px;
+    font-weight: 700;
+    font-size: 15px;
+  }
+ 
+  #main-container .preco{
+    padding: 20px;
+    margin-left: 28px;
+    background-color:#171718;
+    width: 350px;
+    height: 390px;
+    
+  }
+  
+  #main-container .preco > h4{
+    margin: 0px 0px 10px 50px;
+    color: white;
+    font-size: 22px;
+  }
+  
+  #main-container .espaco {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    color: white;
+    font-weight: bold;
+    border-bottom: 2px solid white;
+    margin-bottom: 15px;
+    padding-bottom: 10px;
+
+  }
+  
+  #main-container .cor{
+    color: #00b031;
+  }
+  
+  #teste:hover {
+    transform: translateY(-1000px);
+  }
+
+  #main-container linha{
+    width:100%;
+    height: 98px;
+    margin: 15px 0px 10px 0px;
+  }
+  
+  #main-container .pagar{
+    width:100%;
+    height: 98px;
+    margin: 15px 0px 0px 0px;
+    border-radius: 10px;
+    background: #00b031;
+    color:white;
+    font-size: 36px;
+  }
+  
+  #main-container .preco > p{
+    color: white;
+    font-size: 20px;
+    font-weight: 500;
+    margin: 12px 0px 10px 0px;
+    text-align: center;
+  }
+  
+  #main-container h2{
+    color: white;
+  }
+  
+  #main-container .cartao{
+    margin: 15px 0px 10px 0px;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    background:#171718;
+    width: 350px;
+    height: 180px;
+    margin-left: 30px;
+  }
+  
+  .cartao img{
+    height: 130px;
+  }
+
+.fa-sharp {
+  cursor: pointer;
+}
+
+
+dialog::backdrop {
+  background-color: black;
+  opacity: 40%;
+} 
+
+dialog {
+  margin: auto;
+}
+
+
+
+dialog .container{
+  height: 500px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+dialog .container form{
+  padding:20px;
+  width:700px;
+  background: #fff;
+  box-shadow: 0 5px 10px rgba(0,0,0,.1);
+}
+
+dialog .container form .row{
+  display: flex;
+  flex-wrap: wrap;
+  gap:15px;
+}
+
+dialog .container form .row .col{
+  flex:1 1 250px;
+}
+
+dialog .container form .row .col .title{
+  font-size: 20px;
+  color:#333;
+  padding-bottom: 5px;
+  text-transform: uppercase;
+}
+
+dialog .container form .row .col .inputBox{
+  margin:15px 0;
+}
+
+dialog .container form .row .col .inputBox span{
+  margin-bottom: 10px;
+  display: block;
+}
+
+dialog .container form .row .col .inputBox input{
+  width: 100%;
+  border:1px solid #ccc;
+  padding:10px 15px;
+  font-size: 15px;
+  text-transform: none;
+}
+
+dialog .container form .row .col .inputBox input:focus{
+  border:1px solid #000;
+}
+
+dialog .container form .row .col .flex{
+  display: flex;
+  gap:15px;
+}
+
+dialog .container form .row .col .flex .inputBox{
+  margin-top: 5px;
+}
+
+dialog .container form .row .col .inputBox img{
+  height: 34px;
+  margin-top: 5px;
+  filter: drop-shadow(0 0 1px #000);
+}
+
+dialog .container form .submit-btn{
+  width: 100%;
+  padding:12px;
+  font-size: 17px;
+  background: #27ae60;
+  color:#fff;
+  margin-top: 5px;
+  cursor: pointer;
+}
+
+dialog .container form .submit-btn:hover{
+  background: #2ecc71;
+}
+
+dialog h3 {
+  color: black;
+}
+
+#limpar {
+  background-color: green;
+  width: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  position: relative;
+  right: -800px;
+  border-radius: 5px;
+}

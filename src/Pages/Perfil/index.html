@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MachineGaming</title>
+    <link rel="shortcut icon" href="../../../assets/MachineGaming.svg">
+    <script src="https://kit.fontawesome.com/9a1eb3ff66.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="../../components/Header-Footer/styles.css">
+    <link rel="stylesheet" href="../../../style.css">
+</head>
+<body>
+    <!--COLOCAR FOTOS NA PASTA ASSETS-->
+    <header>
+        <section id="nav"></section>
+    </header>
+
+    <main>
+        <div class="container" onclick="change1(false)">
+            <!--COLOCAR SEU COMPONENTE AQUI-->
+            <h1>PERFIL</h1>
+            <div class="main-container">
+                <h2>Olá, <span id="nomeDoUsuario"> </span></h2>
+                <div class="perfil">
+                    <img id="imgPreview" src="" alt="">
+                    <div>
+                        <label for="myFileInput">
+                            <h3 style="width: 200px; margin-left: -40px;">Mudar Foto</h3>
+                            <input name="myFileInput" type="file" id="myFileInput" style="width: 400px;">
+                        </label>
+                        <h3 onclick="removerFoto()" style="cursor: pointer;">REMOVER FOTO</h3>
+                    </div>
+                </div>
+                <div class="opcoes">                    
+                    <div onclick="meusPedidos()" class="row-input">
+                        <h3>MEUS PEDIDOS</h3>
+                        Todos Os Seus Pedidos
+                    </div>
+                    <div onclick="mensagem()" class="row-input">
+                        <h3>Mensagem</h3>
+                        Envie uma mensagem
+                    </div>
+                    <div onclick="meusDados()"class="row-input">
+                        <h3>Dados Pessoais</h3>
+                        Altere Senha, Login, Email e Dados Pessoais
+                    </div>
+                    <div onclick="sair()"class="row-input">
+                        <h3>Sair</h3>
+                        Acesso Com Outra Conta
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <section id="footer"></section>
+    </footer>
+    <script defer src="script.js"></script>
+    <script src="../../components/Header-Footer/script.js"></script>
+</body>
+</html>

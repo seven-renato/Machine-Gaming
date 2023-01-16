@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MachineGaming</title>
+    <link rel="shortcut icon" href="../../../assets/MachineGaming.svg">
+    <script src="https://kit.fontawesome.com/9a1eb3ff66.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="../../components/Header-Footer/styles.css">
+    <link rel="stylesheet" href="../../../style.css">
+</head>
+<body>
+    <!--COLOCAR FOTOS NA PASTA ASSETS-->
+    <header>
+        <section id="nav"></section>
+    </header>
+
+    <main>
+        <div class="container" onclick="change1(false)" onmousedown="change2(false)">
+            <!--COLOCAR SEU COMPONENTE AQUI-->
+            <div class="wrapper">
+                <div class="pesquisa">
+                  <div id="buttons">
+                    <button class="button-value" onclick="filterProduct('switch')">
+                      Switch
+                    </button>
+                    <button class="button-value" onclick="filterProduct('xbox')">
+                      Xbox
+                    </button>
+                    <button class="button-value" onclick="filterProduct('ps4')">
+                      PlayStation
+                    </button>
+                    <button class="button-value" onclick="filterProduct('barato')">
+                      Até 20R$
+                    </button>
+                    <button class="button-value" onclick="filterProduct('medio')">
+                      Até 40R$
+                    </button>
+                    <!-- <button class="button-value" onclick="filterProduct('alto')">
+                      50R$
+                    </button> -->
+                    <button class="button-value" onclick="filterProduct('caro')">
+                      100R$ ou +
+                    </button>
+                    <button class="button-value" onclick="filterProduct('all')">Todos</button>
+                  </div>
+                  <div id="search-container">
+                    <input
+                      type="search"
+                      id="search-input"
+                      placeholder="Procurar Jogos"
+                    />
+                    <button id="search">Buscar</button>
+                  </div>
+                </div>
+                <div id="products" class="products"></div>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <section id="footer"></section>
+    </footer>
+    <script defer type="module" src="script.js"></script>
+    <script src="../../components/Header-Footer/script.js"></script>
+    <script>
+    function filterProduct(value) {
+        //Button class code
+        let buttons = document.querySelectorAll(".button-value");
+        buttons.forEach((button) => {
+        //check if value equals innerText
+        if (value.toUpperCase() == button.innerText.toUpperCase()) {
+            button.classList.add("active");
+        } else {
+            button.classList.remove("active");
+        }
+        });
+        //select all cards
+        let elements = document.querySelectorAll(".card");
+        let cards = document.querySelectorAll(".card");
+        cards.forEach(item => {
+          if (value == "all") {
+            item.classList.remove("hide");
+          } else {
+            //Check if element contains genero class
+            if (item.classList.contains(value)) {
+            //display element based on genero
+            item.classList.remove("hide");
+            } else {
+            //hide other elements
+            item.classList.add("hide");
+            }
+        }
+        })
+        //loop through all cards
+        elements.forEach((element) => {
+        //display all cards on 'all' button click
+        if (value == "all") {
+            element.classList.remove("hide");
+        } else {
+            //Check if element contains genero class
+            if (element.classList.contains(value)) {
+            //display element based on genero
+            element.classList.remove("hide");
+            } else {
+            //hide other elements
+            element.classList.add("hide");
+            }
+        }
+        });
+    }
+  //Search button click
+    document.getElementById("search").addEventListener("click", () => {
+        //initializations
+        let searchInput = document.getElementById("search-input").value;
+        let elements = document.querySelectorAll(".product-name");
+        let cards = document.querySelectorAll(".card");
+        //loop through all elements
+        elements.forEach((element, index) => {
+        //check if text includes the search value
+        if (element.innerText.includes(searchInput.toUpperCase())) {
+            //display matching card
+            cards[index].classList.remove("hide");
+        } else {
+            //hide others
+            cards[index].classList.add("hide");
+        }
+        });
+        elements.forEach((element, index) => {
+        //check if text includes the search value
+        if (element.innerText.includes(searchInput.toUpperCase())) {
+            //display matching card
+            cards[index].classList.remove("hide");
+        } else {
+            //hide others
+            cards[index].classList.add("hide");
+        }
+        });
+           
+    });
+    //Initially display all products
+    window.onload = () => {
+        filterProduct("all");
+        if (window.location.search.slice(1) == "20"){
+          filterProduct("barato")
+        } else if (window.location.search.slice(1) == "40") {
+          filterProduct("medio")
+        } else if(window.location.search.slice(1) == "switch") {
+          filterProduct("switch")
+        } else if(window.location.search.slice(1) == "ps4") {
+          filterProduct("ps4")
+        } else if(window.location.search.slice(1) == "xbox") {
+          filterProduct("xbox")
+        } else {
+          let searchInputT = document.getElementById("search-input")
+          searchInputT.value = window.location.search.slice(1)
+          let searchInput = document.getElementById("search-input").value;
+          let elements = document.querySelectorAll(".product-name");
+          let cards = document.querySelectorAll(".card");
+          //loop through all elements
+          elements.forEach((element, index) => {
+          //check if text includes the search value
+          if (element.innerText.includes(searchInput.toUpperCase())) {
+              //display matching card
+              cards[index].classList.remove("hide");
+          } else {
+              //hide others
+              cards[index].classList.add("hide");
+          }
+          });
+          elements.forEach((element, index) => {
+          //check if text includes the search value
+          if (element.innerText.includes(searchInput.toUpperCase())) {
+              //display matching card
+              cards[index].classList.remove("hide");
+          } else {
+              //hide others
+              cards[index].classList.add("hide");
+          }
+          });
+        }
+    };
+    </script>
+</body>
+</html>

@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MachineGaming</title>
+    <link rel="shortcut icon" href="../../../assets/MachineGaming.svg">
+    <script src="https://kit.fontawesome.com/9a1eb3ff66.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="../../components/Header-Footer/styles.css">
+    <link rel="stylesheet" href="../../../style.css">
+</head>
+<body>
+    <!--COLOCAR FOTOS NA PASTA ASSETS-->
+    <header>
+        <section id="nav"></section>
+    </header>
+
+    <main onclick="change1(false)" onmousedown="change2(false)">
+        <div class="container">
+            <!--COLOCAR SEU COMPONENTE AQUI-->
+            <h1 style="margin-left: 125px;">FAÇA SEU CADASTRO</h1>
+            <form id ="main-container">
+                <div id="msgError"></div>
+                <div id="msgSuccess"></div>
+                <div class ="primeiro">
+                  <div class="diminuir"> <label id="labelName" style="margin-left: 20px;color: white; background: none;" for="">Nome</label><input id="name" type="text"name='name' id="name" placeholder="INSIRA SEU NOME" class="aumenta nome" required  ></div>
+                  <div class="diminuir"> <label id="labelLastName" style="color: white; background: none;" for="">Sobrenome</label><input id="lastName" type="text"name='lastname' id="lastname" placeholder="INSIRA SEU SOBRENOME" class="aumenta" required ></div>
+                  <div class="diminuir"> <label id="labelBirth" onkeypress="return onlynumber();" style="color: white; background: none;" for="">Data de Nascimento</label><input onkeypress="return onlynumber();" type="text"name='birth' id="birth" placeholder="DATA DE NASCIMENTO" class="aumenta" maxlength="10" required ></div>
+                </div>
+                <div class ="segundo">
+                    <div>
+                        <label id="labelCel" style="color: white; background: none;" for="">Celular</label>
+                        <input maxlength="18" required type="text"name='cell' id="cel" placeholder="+(55)" onkeypress="return onlynumber();" class="menor" value="+(55) ">
+                    </div>
+                    <div>
+                        <label id="labelCpf"  style="color: white; background: none;" for="">CPF</label>
+                        <input required  maxlength="14" type="text" name='cpf' id="cpf" placeholder="INSIRA SEU CPF" onkeypress="return onlynumber();" class="menor">
+                    </div>
+                </div>
+                <div class ="terceiro">
+                    <div>
+                        <label id="labelEmail" style="color: white; background: none;" for="">E-mail</label>
+                        <input required type="email"name='email' id="email" placeholder="INSIRA SEU MELHOR EMAIL" class="aumenta" style="width: 300px;" required>
+                    </div>
+                    <div>
+                        <label id="labelConfirmEmail" style="color: white; background: none;" for="">Confirmação</label>
+                        <input required type="email"name='email_confirmation' id="email_confirmation" placeholder="CONFIRME SEU E-MAIL" class="aumenta" style="width: 300px;">
+                    </div>
+                </div>
+                <div class ="quarto">
+                    <div>
+                        <label id="labelPass" style="color: white; background: none;" for="">Digite uma senha</label>
+                        <input required maxlength="16" type="password"name='password' id="password" placeholder="SENHA" class="aumenta" style="width: 300px;">
+                    </div>
+                    <div>
+                        <label id="labelPassConfirmation" style="color: white; background: none;" for=""> Confirmação</label>
+                        <input required maxlength="16" type="password"name='passconfirmation' id="passconfirmation" placeholder="CONFIRME SUA SENHA" style="width: 300px;" class="aumenta">
+                    </div>
+                </div>
+        
+              <div class ="botao">
+                  <input style="background-color: green;" onclick="cadastrar()" type="button" id="btn-submit" value ='CRIAR CONTA' class="criar" >
+              </div>      
+            </form>
+            <div class="login">
+              <h2>Já Tem Uma Conta? Faça Login</h2>
+              <a href="../Login/index.html"><input type="button" value="ENTRAR" class="login-btn"></a>
+              
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <section id="footer"></section>
+    </footer>
+    <script defer src="script.js"></script>
+    <script src="../../components/Header-Footer/script.js"></script>
+</body>
+</html>

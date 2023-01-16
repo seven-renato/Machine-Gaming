@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MachineGaming</title>
+    <link rel="shortcut icon" href="../../../assets/MachineGaming.svg">
+    <script src="https://kit.fontawesome.com/9a1eb3ff66.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="../../components/Header-Footer/styles.css">
+    <link rel="stylesheet" href="../../../style.css">
+</head>
+<body>
+    <!--COLOCAR FOTOS NA PASTA ASSETS-->
+    <header>
+        <section id="nav"></section>
+    </header>
+
+    <main>
+        <div class="container">
+            <!--COLOCAR SEU COMPONENTE AQUI-->
+            <h1 id="titulo"> SUPORTE </h1>
+
+        <form>
+
+            <fieldset class="grupo">
+                <div class="campo">
+                    <label class="categoria"> <strong> Categoria: </strong></label>
+                    <select id="categoria">
+                        <option id="opcao" selected disabled value=""> Selecione</option>
+                        <option id="opcao" value="Devolucão e Pedidos"> Devolução & Reembolso </option>
+                        <option id="opcao" value="Pagamentos"> Pagamentos </option>
+                        <option id="opcao" value="Conta e Segurança"> Conta & Segurança </option>
+                        <option id="opcao" value="Marketing"> Marketing </option>
+                        <option id="opcao" value="Alterar Cartão"> Alterar Cartão </option>
+                        <option id="opcao" value="Outros"> Outros </option>
+                    </select>
+                </div>
+            </fieldset>
+            <div class="campo">
+                <label for="numero-pedido"> <strong> ID Do Pedido: </strong></label>
+                <input type="text" name="pedido" id="pedido" placeholder="283746589" required>
+            </div>
+            <div class="campo">
+                <label for="mensagem"> <strong> Mensagem: </strong></label>
+                <input type="text" name="mensagem" id="mensagem">
+            </div>
+            <button style='cursor: pointer;'onclick="funcaoMensagem()"type="button"> ENVIAR </button>
+
+        </form>
+
+
+            
+        </div>
+    </main>
+
+    <footer>
+        <section id="footer"></section>
+    </footer>
+    <script defer src="script.js"></script>
+    <script src="../../components/Header-Footer/script.js"></script>
+</body>
+</html>

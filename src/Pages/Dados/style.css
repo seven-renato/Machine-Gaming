@@ -1,0 +1,87 @@
+main .dados{
+    color:#00B031;
+    font-weight: 700;
+    font-size: 64px;
+}
+main section{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    background: #25262C;
+    border-radius: 2px;
+    width: 673px;
+    height: 750px;
+    padding: 40px 0;
+}
+
+main label{
+    font-weight: 600;
+    font-size: 18px;
+    color: #FFFFFF;
+}
+
+main input{
+    display: block;
+    width: 550px;
+    height: 60px;
+    background: #171718;
+    border: 1px solid #0AA336;
+    border-radius: 10px;
+    padding-left:22px;
+    font-size: 18px;
+    color:white;
+}
+
+main .genero{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 550px;
+    height: 60px;
+    background: #171718;
+    border: 1px solid #0AA336;
+    border-radius: 10px;
+    color: white;
+    font-size:18px;
+    padding: 0 18px;
+    font-weight: 600;
+}
+
+main i{
+    color:#00B031;
+    font-size: 25px;
+}
+
+main button{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 548px;
+    height: 102px;
+    background: #D9D9D9;
+    border-radius: 10px;  
+    padding: 0 20px;
+}
+
+main .texto_do_botao{
+    color:black;
+    font-weight: 700;
+    font-size: 24px;
+}
+
+main .cadeado{
+    font-size:60px;
+    color:#00B031;
+}
+
+
+main .salvar{
+    color:white;
+    background-color: #00B031;
+    width: 204px;
+    height: 74px;
+    font-weight: 700;
+    font-size: 36px;
+    padding-left: 29px;
+}

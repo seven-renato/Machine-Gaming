@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MachineGaming</title>
+    <link rel="shortcut icon" href="../../../assets/MachineGaming.svg">
+    <script src="https://kit.fontawesome.com/9a1eb3ff66.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="../../components/Header-Footer/styles.css">
+    <link rel="stylesheet" href="../../../style.css">
+</head>
+<body>
+    <!--COLOCAR FOTOS NA PASTA ASSETS-->
+    <header>
+        <section id="nav"></section>
+    </header>
+
+    <main>
+        <div class="container" onclick="change1(false)" onmousedown="change2(false)">
+            <!--COLOCAR SEU COMPONENTE AQUI-->
+            <h1> SEU CARRINHO </h1>
+
+            <div id="main-container">
+          
+              <div class="carrinho-container">
+                <div id="itensDoCarrinho">                    
+                </div>                
+                <div class="segunda-linha">
+                  <label class="label-container">
+                    <input type="checkbox" checked="checked"></input>
+                    <span class="checkmark"></span> Este produto é um presente?
+                  </label>
+                  <button type="button" style="margin-top: 5px; color: white;" onmouseover="showMessage()" onmouseout="hideMessage()">
+                    <span style="z-index: 10;" id="teste">?</span>
+                  </button>
+                  <div class="mensagem" >Ao selecionar dar de Presente, forneceremos um Green Code. 
+                    Este código poderá então ser enviado para o amigo de sua escolha. 
+                    Instruções completas serão fornecidas no seu e-mail de confirmação do pedido.</div>
+                </button>
+              
+                </div>
+                <div class="terceira-linha">
+                  <p>CÓDIGOS PROMOCIONAIS E CARTÕES-PRESENTE</p>
+                </div>
+                <div class="quarta-linha">
+                  <label>DIGITE O SEU CÓDIGO</label>
+                  <input type="text" placeholder="" id="cupom">
+                  <input style="cursor: pointer;" type="submit" value="APLICAR" onclick="descontar()">
+                </div>
+              </div>
+              <div class="linha">
+                <div class="preco">
+                  <h4>RESUMO DO PEDIDO</h4>
+                  <div class="espaco">
+                    <p>PREÇO</p>
+                    <p>R$<span id="preco-total-semdisc"></span> BRL</p>
+                  </div>
+                  <div class="espaco">
+                    <p>TOTAL</p>
+                    <p class="cor">R$<span id="total-preco"></span> BRL</p>
+                  </div>
+                  <input type="submit" id="pagarModal" style="cursor: pointer;" value="PAGAR" class="pagar"></input>
+                  <dialog>
+                    
+                      <div class="container">
+
+                        <form required action="">
+                    
+                            <div class="row">
+                    
+                                <div class="col">
+                    
+                                    <h3 style="color: black;" class="title">Endereço de Cobrança</h3>
+                    
+                                    <div required class="inputBox">
+                                        <span>Nome Completo :</span>
+                                        <input  required type="text" placeholder="pauleta"></input>
+                                    </div>
+                                    <div class="inputBox">
+                                        <span>Email :</span>
+                                        <input required type="email" placeholder="example@example.com"></input>
+                                    </div>
+                                    <div class="inputBox">
+                                        <span>Endereço :</span>
+                                        <input required type="text" placeholder="rua - numero - complemento"></input>
+                                    </div>
+                                    <div class="inputBox">
+                                        <span>cidade :</span>
+                                        <input  required type="text" placeholder="Rio Grande"></input>
+                                    </div>
+                    
+                                    <div class="flex">
+                                        <div class="inputBox">
+                                            <span>estado :</span>
+                                            <input  required type="text" placeholder="RS"></input>
+                                        </div>
+                                        <div class="inputBox">
+                                            <span>CEP :</span>
+                                            <input required  type="text" placeholder="12345610"></input>
+                                        </div>
+                                    </div>
+                                
+                                </div>
+                    
+                                <div class="col">
+                    
+                                    <h3 style="color: black;" class="title">Pagamento</h3>
+                    
+                                    <div class="inputBox">
+                                        <span>Cartões aceitos :</span>
+                                        <img src="./card_img.png" alt="">
+                                    </div>
+                                    <div class="inputBox">
+                                        <span>Nome no cartão :</span>
+                                        <input  required type="text" placeholder="paulo renato neto">
+                                    </div>
+                                    <div class="inputBox">
+                                        <span>Número do cartão :</span>
+                                        <input  required type="number" placeholder="1111-2222-3333-4444">
+                                    </div>
+                                    <div class="inputBox">
+                                        <span>Mês de expiração :</span>
+                                        <input  required type="text" placeholder="janeiro">
+                                    </div>
+                    
+                                    <div class="flex">
+                                        <div class="inputBox">
+                                            <span>Ano de expiração :</span>
+                                            <input required  type="number" placeholder="2022">
+                                        </div>
+                                        <div class="inputBox">
+                                            <span>CVV :</span>
+                                            <input  required type="text" placeholder="1234">
+                                        </div>
+                                    </div>
+                    
+                                </div>
+                        
+                            </div>
+                    
+                            <input type="submit" value="Ir para Página de Pedido" id="submit-btn" required class="submit-btn"> </input>
+                    
+                        </form>
+                    
+                    </div>
+                    
+                  </dialog>
+                  <p>Ao Clicar Em “pagar”, Você Aceita &nbsp;Nossa Politica De Reembolso</p>
+                </div>
+                <div>
+                    <h2 style="margin-left: 30px; margin-bottom: -10px; margin-top: 10px;">NÓS ACEITAMOS</h2>
+                    <div class="cartao">
+                      <img src="https://cdn.discordapp.com/attachments/770739423066980363/1057422631395131392/image.png">
+                    </div>
+                </div>
+              </div>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <section id="footer"></section>
+    </footer>
+    <script src="script.js"></script>
+    <script type="module" src="app.js"></script>
+    <script src="../../components/Header-Footer/script.js"></script>
+    <script defer>
+        function removerItem(cont){
+            let carrinho = JSON.parse(localStorage.getItem("Carrinho")||"[]")
+            console.log(carrinho)
+            carrinho.pop(cont)
+            localStorage.removeItem("Carrinho")
+            localStorage.setItem("Carrinho", JSON.stringify(carrinho))
+            document.location.reload(true)
+        }
+        function descontar() {
+            let cupom = document.getElementById("cupom")
+            let desconto = 1
+            if (cupom.value == "TRABALHOSPI15") {
+                desconto = 0.85
+            }
+            if (cupom.value == "PAULOLINDO") {
+                desconto = 0.50
+            }
+            if (cupom.value == "dudinhamaravilhosa"){
+                desconto = 0.60
+            }
+            var textoteste = document.getElementById("preco-total-semdisc")
+            var textotestetotal = document.getElementById("total-preco")
+            let valor = parseFloat(textoteste.innerText.replace(",","."))
+            valor *= desconto
+            textotestetotal.innerHTML = valor.toFixed(2).replace(".",",")
+        }
+    </script>
+</body>
+</html>

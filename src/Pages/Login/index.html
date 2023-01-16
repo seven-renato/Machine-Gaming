@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MachineGaming</title>
+    <link rel="shortcut icon" href="../../../assets/MachineGaming.svg">
+    <script src="https://kit.fontawesome.com/9a1eb3ff66.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="../../components/Header-Footer/styles.css">
+    <link rel="stylesheet" href="../../../style.css">
+</head>
+<body>
+    <!--COLOCAR FOTOS NA PASTA ASSETS-->
+    <header>
+        <section id="nav"></section>
+    </header>
+
+    <main onclick="change1(false)" onmousedown="change2(false)">
+        <div class="container" onclick="change(false)">
+            <!--COLOCAR SEU COMPONENTE AQUI-->
+            <div class = "principal"> 
+                <h1>LOGIN</h1>
+                <h4 id="casoDeErro" style="position:relative; color: red; top: -40px; right: 35px;"></h4>
+                <div id="msgError"></div>
+                <div class ="email"><input required style="color: white;" id="email" type="email" placeholder="E-MAIL" class="inserir"></input></div>
+                
+                <div class ="input-icons">
+                  <i id="showEye" onclick="showPass()" style="cursor: pointer; color: white;" class="fa fa-eye-slash"></i>
+                  <input required id="password" style="color: white;" type="password" placeholder="SENHA" class ="inserir"></input>
+                </div>
+                  <div><input type="submit" id="btnsubmit" style="margin-left: 320px;cursor: pointer;" value="Esqueci minha senha" class="esqueci"></div>
+                <label class="label-container" style="font-size: 12px; transform: scale(1.5);">
+                  <input type="checkbox" checked="checked"></input>
+                  <span class="checkmark" style="margin-right: -10px; margin-left: 10px"></span> <span >LEMBRAR SENHA</span>
+                </label> 
+                <input type="submit" onclick="entrar()" id="btn-submit" value ="ENTRAR" style="padding-right: 10px;" class="botao"></input>                
+            </div>
+            <div class="cadastro">
+                <h1>CADASTRE-SE</h1>
+                <input type="submit" id="btnsubmit" onclick="cadastrar()" value="CRIAR CONTA" style="padding-right: 10px;" class="criar"></input><!-- cometario</!-->
+            </div>              
+        </div>d
+
+    <footer>
+        <section id="footer"></section>
+    </footer>
+    <script defer src="script.js"></script>
+    <script src="../../components/Header-Footer/script.js"></script>
+</body>
+</html>

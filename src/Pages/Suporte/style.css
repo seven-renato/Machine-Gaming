@@ -1,0 +1,80 @@
+/* Detalhes */
+
+main #titulo{
+    display: flex;
+    justify-content: center;
+    font-size: 50px;
+    color: #00b031;
+}
+
+main fieldset{
+    border: 0;
+}
+
+main form{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    width: 1000px;
+    height: 600px;
+    background: #25262C;
+    box-shadow: 0px 3px 3px 3px rgba(0, 0, 0, 0.1);
+}
+
+main input, select, textarea, button{
+    border-radius: 5px;
+}
+
+main .campo{
+    margin-bottom: 1em;
+}
+
+main .campo label{
+    display: block;
+    color: white;
+}
+
+main fieldset.grupo .campo{
+    float: left;
+    margin-right: 1em;
+}
+main #mensagem{
+    width: 900px; 
+    padding: 10px 10px 200px 10px;
+    font-size: 18px;
+    font-weight: 500;
+    display: flex;
+    
+}
+main input::placeholder{
+    color:#888888;
+}
+
+main .categoria{
+    margin-left: 15px;
+}
+main #categoria{
+    margin-left: 15px;
+    width: 900px;
+    height: 50px;
+    padding-left: 15px;
+}
+
+main #pedido{
+    width: 900px;
+    height: 50px;
+    padding-left: 15px;
+    font-weight: 500;
+    font-size: 15px;
+
+}
+
+main button{
+    background-color: #00b031;
+    color: white;
+    width: 204px;
+    height: 74px;
+    font-weight: 700;
+    font-size: 36px;
+    margin-top: 30px;
+}

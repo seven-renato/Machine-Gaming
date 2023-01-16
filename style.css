@@ -1,0 +1,35 @@
+:root {
+    --main-green-color: #00B031;
+    --bg-gray-color: #30332D;
+    --price-gray-color: #d9d9d9;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;    
+    border: none;
+    outline: none;
+}
+
+body {
+    background-image: url("./assets/background.png");    
+    font-family: 'Poppins', sans-serif;
+    
+}
+
+.container {
+    margin: 60px auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;    
+    width: 70%;
+    max-width: 48rem;
+    height: auto;
+    
+}
+
+
+
+

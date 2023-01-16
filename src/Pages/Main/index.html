@@ -1,0 +1,446 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MachineGaming</title>
+    <link rel="shortcut icon" href="../../../assets/MachineGaming.svg">
+    <script src="https://kit.fontawesome.com/9a1eb3ff66.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="../../components/Header-Footer/styles.css">
+    <link rel="stylesheet" href="../../../style.css">
+    <link rel="stylesheet" href="css/swiper-bundle.min.css"> <!-- Card Swiper Library -->
+    <link rel="stylesheet" href="css/style.css"> <!-- Second Section -->
+</head>
+<body>
+    <!--COLOCAR FOTOS NA PASTA ASSETS-->
+    <header>
+        <section id="nav"></section>
+    </header>
+
+    <main onclick="change1(false)" onmousedown="change2(false)">
+        <div class="container">
+            <!--COLOCAR SEU COMPONENTE AQUI-->
+            <section style="visibility: hidden; margin-bottom: -100px;" class="main-rectangle-types">
+                <ul>
+                    <li><a>Terror</a></li>
+                    <li><a>Aventura</a></li>
+                    <li><a>Sobrevivência</a></li>
+                    <li><a>Online</a></li>
+                    <li><a>Co-op</a></li>
+                    <li><a>Ação</a></li>
+                    <li><a>Corrida</a></li>
+                    <li><a>Anime</a></li>
+                    <li><a>Plataforma</a></li>                   
+                </ul>
+            </section>           
+
+
+            <section class="first-section" id="first-carousel">
+                <div class="slide-first-carousel">
+                    <div class="slides-first-carousel">
+                        <div id="voltar" class="btn-first-carousel">
+                            <i class="fas fa-chevron-left"></i>
+                        </div>
+                        <div id="next" class="btn-first-carousel">
+                            <div class="fas fa-chevron-right"></div>
+                        </div>
+            
+                        <div id="atual" class="image">
+                            <div class="card" alt="003">
+                                <img src="0.png" alt="003">
+                                <div class="card-details" id="003">
+                                    <h2>Sonic Mania</h2>
+                                    <br>
+                                    <span>Disponível em: Todas Plataformas</span>
+                                    <span>Categorias: Aventura, Felicidade</span>
+                                    <h1>Por Apenas: <s style="color: red;"> R$ 59,00</s> <span style="color:rgb(151, 200, 151);">R$ 34,90</span> </h1>
+                                </div> 
+                                <!-- <div class="price-tag">
+                                    <span class="green-border"></span>
+                                    <h1>R$34,00</h1>
+                                </div> -->
+                            </div>
+                        </div>
+                        <div class="image">
+                            <div class="card" alt="001">
+                                <img src="1.png" alt="001"></div>
+                                <div class="card-details" id="001">
+                                    <h2>Pokemon Scarlet</h2>
+                                    <br>
+                                    <span>Disponível em: Todas Plataformas</span>
+                                    <span>Categorias: Aventura, Felicidade</span>
+                                    <h1>Por Apenas: <s style="color: red;"> R$ 599,90</s> <span style="color:rgb(151, 200, 151);">R$ 340,50</span> </h1>
+                                </div>
+                                <!-- <div class="price-tag">
+                                    <span class="green-border"></span>
+                                    <h1>R$599,00</h1>
+                                </div> -->
+                            </div>
+                        <div class="image">
+                            <div class="card" alt="023">
+                                <img alt="023" src="2.png" alt="Grand Theft Auto V: GTA V">
+                                <div class="card-details" id="023" alt="023">
+                                    <h2>Grand Theft Auto V: GTA V</h2>
+                                    <br>
+                                    <span>Disponível em: Todas Plataformas</span>
+                                    <span>Categorias: Violência, +18</span>
+                                    <h1>Por Apenas: <s style="color: red;"> R$ 259,90</s> <span style="color:rgb(151, 200, 151);">R$ R$ 59,90</span> </h1>
+                                </div>
+                                <!-- <div class="price-tag">
+                                    <span class="green-border"></span>
+                                    <h1>R$59,90</h1>
+                                </div> -->
+                            </div>
+                        </div>
+                        <div class="image">
+                            <div class="card" alt="005">
+                                <img src="3.png" alt="005">
+                                <div class="card-details" id="005">
+                                    <h2>Mario Odyssey</h2>
+                                    <br>
+                                    <span>Disponível em: Nintendo Switch</span>
+                                    <span>Categorias: Plataforma, Felicidade</span>
+                                    <h1>Por Apenas: <s style="color: red;"> R$ 299,00</s> <span style="color:rgb(151, 200, 151);">R$ 174,90</span> </h1>
+                                </div>
+                                <!-- <div class="price-tag">
+                                    <span class="green-border"></span>
+                                    <h1>R$299,00</h1>
+                                </div> -->
+                            </div>
+                        </div>
+                        <div class="image">
+                            <div class="card" alt="024">
+                                <img alt="024" src="https://i.ytimg.com/vi/dMBafkOmyIU/maxresdefault.jpg" alt="Hades">
+                                <div id="024" alt="024" class="card-details">
+                                    <h2>HADES</h2>
+                                    <br>
+                                    <span>Disponível em: Todas Plataformas</span>
+                                    <span>Categorias: Aventura, Rogue-Like</span>
+                                    <h1>R$34,90</h1>
+                                </div>
+                                <!-- <div class="price-tag">
+                                    <span class="green-border"></span>
+                                    <h1>R$34,90</h1>
+                                </div> -->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="balls">        
+                </div>
+            </section>
+               
+            <section class="second-section" id="second-carousel">
+                <div style="margin-left: 30px;" class="h1-styles ">
+                    <h1>Novidades</h1> 
+                    <div class="childClass">
+                        <span></span><span></span>
+                    </div>
+                </div>
+                <div class="slide-container swiper">
+                    <div class="slide-content">
+                        <div class="card-wrapper swiper-wrapper">
+                            <div class="card swiper-slide">
+                                <div class="image-content">
+        
+                                    <div class="card-image">
+                                        <img src="https://img-4.linternaute.com/q1BaHc45_zT5w36MLT5w89CX2-s=/1500x/smart/680ce00a29c5458095206ac422cada69/ccmcms-linternaute/34788149.jpg" alt="010" style="height: 125px;" class="card-img">
+                                    </div>
+                                </div>                        
+                            </div>
+                            <div class="card swiper-slide">
+                                <div class="image-content">
+        
+                                    <div class="card-image">
+                                        <img src="https://staticctf.akamaized.net/J3yJr34U2pZ2Ieem48Dwy9uqj5PNUQTn/6ZAlQrGYxXi8Bo8PuhJd5g/206c57ecb27e58b4555089c6c80d3db5/ACV_meta.png" style="height: 125px;" alt="011" class="card-img">
+                                    </div>
+                                </div>                        
+                            </div>
+                            <div class="card swiper-slide">
+                                <div class="image-content">
+        
+                                    <div class="card-image">
+                                        <img src="https://assets.nuuvem.com/image/upload/v1/products/62f3bad36e6ea9747680d06a/sharing_images/um9nv6paobzlgmukswpq.jpg" alt="009" style="height: 125px;" class="card-img">
+                                    </div>
+                                </div>                        
+                            </div>
+                            <div class="card swiper-slide">
+                                <div class="image-content">
+        
+                                    <div class="card-image">
+                                        <img alt="012" style="height: 125px;" src="https://cdn.akamai.steamstatic.com/steam/apps/335240/capsule_616x353.jpg?t=1622148023" alt="" class="card-img">
+                                    </div>
+                                </div>                        
+                            </div>                   
+                        </div>
+                    </div>
+        
+                    <div class="swiper-button-next swiper-navBtn"></div>
+                    <div class="swiper-button-prev swiper-navBtn"></div>
+                    <div class="swiper-pagination"></div>
+                </div>
+            </section>
+            <section class="third-section">
+                <div style="margin-left: -15px;" class="h1-styles">
+                    <h1>Ofertas Especiais</h1> 
+                    <div class="childClass">
+                        <span></span><span></span>
+                    </div>
+                </div>
+                <div class="catalog">
+                    <div class="catalog-main-games">
+                        <div class="img-catalog">
+                            <img id="014" src="../../../assets/Jogos/csgo.png" alt="014">
+                        </div>
+                        <div class="img-catalog">
+                            <img id="013" src="../../../assets/Jogos/dbd.png" alt="013">
+                        </div>
+                    </div>
+                    <div class="catalog-sub-games">
+                        <div class="catalog-prices">
+                            <span class="catalog-min-price" onclick="verAteQual('20')">Até R$20</span>
+                            <span class="catalog-min-price" onclick="verAteQual('40')">Até R$40</span>
+                            <span class="all-catalog" onclick="viajar()">Ver tudo</span>
+                        </div>
+                        <img src="../../../assets/Jogos/terraria.png" alt="002">
+                        <img src="../../../assets/Jogos/stardewvalley.png" alt="007">
+                    </div>
+                </div>
+            </section>
+            <section class="quarter-section">
+                <div class="h1-styles">
+                    <h1>Os Mais Vendidos</h1> 
+                    <div class="childClass">
+                        <span></span><span></span>
+                    </div>
+                </div>
+                <span style="width: 100px; margin-left: auto; cursor: pointer; margin-right: 10px;" class="all-catalog" onclick="viajar()">Ver tudo</span>
+                <div class="quarter-section-table">
+                    <table>
+                        <tr>
+                            <td>
+                                <div class="card">                           
+                                    <img style="border-radius: 0;" src="https://image.api.playstation.com/vulcan/img/rnd/202010/2620/gPTPUF3mT9FXELav8OKXmr9j.png" alt="">                        
+                                    <div class="price-tag">
+                                        <span class="green-border"></span>
+                                        <h1>R$34,00</h1>
+                                    </div>
+                                    <div class="card-details" id="015">
+                                        <h3>Uncharted 4</h3>
+                                        <br>
+                                        <span>Disponível em: Apenas PS4</span>
+                                        <span>Categorias: Mundo Aberto, Aventura</span>
+                                    </div>
+                                </div>
+                            </td>
+                            <td>
+                                <div class="card" alt="004">                           
+                                    <img src="https://image.api.playstation.com/vulcan/ap/rnd/202207/1210/4xJ8XB3bi888QTLZYdl7Oi0s.png" alt="004">
+                                    <div class="price-tag">
+                                        <span class="green-border"></span>
+                                        <h1>R$199,00</h1>
+                                    </div>
+                                    <div class="card-details" id="004">
+                                        <h3>Gof Of War: Ragnarok</h3>
+                                        <br>
+                                        <span>Disponível em: Apenas PS4</span>
+                                        <span>Categorias: Mundo Aberto, Mitologia</span>
+                                    </div>
+                                </div>
+                            </td>
+                            <td>
+                                <div class="card">                           
+                                    <img src="https://img.hype.games/cdn/635eed3e-ba6f-4cb7-9685-5c6ce64e1e0fRed-Dead-Redemption-2-Cover.jpg" alt="">
+                                    <div class="price-tag">
+                                        <span class="green-border"></span>
+                                        <h1>R$249,90</h1>
+                                    </div>
+                                    <div class="card-details" id="016">
+                                        <h3>Red Dead Redemption II</h3>
+                                        <br>
+                                        <span>Disponível em: Apenas PS4 e PC</span>
+                                        <span>Categorias: Mundo Aberto, Violência</span>
+                                    </div>
+                                </div>
+                            </td>                            
+                        </tr>
+                        <tr>
+                            <td>
+                                <div class="card">                           
+                                    <img src="https://cdn2.unrealengine.com/ea-sports-fifa-23-is-coming-to-the-epic-games-store-1920x1080-398e19351a82.jpg" alt="">
+                                    <div class="price-tag">
+                                        <span class="green-border"></span>
+                                        <h1>R$299,90</h1>
+                                    </div>
+                                    <div class="card-details" id="017">
+                                        <h3>EA SPORTS: FIFA 23</h3>
+                                        <br>
+                                        <span>Disponível em: Todas Plataformas</span>
+                                        <span>Categorias: Futebol, COOP</span>
+                                    </div>
+                                </div>
+                            </td>
+                            <td>
+                                <div class="card">                           
+                                    <img src="https://assets.xboxservices.com/assets/dd/64/dd649e2a-7e7a-4abb-ad50-0ab2c042a3fe.jpg?n=994894_GLP-Page-Hero-1084_1920x1080.jpg" alt="">
+                                    <div class="price-tag">
+                                        <span class="green-border"></span>
+                                        <h1>R$349,90</h1>
+                                    </div>
+                                    <div class="card-details" id="018">
+                                        <h3>EA SPORTS: NBA2K23</h3>
+                                        <br>
+                                        <span>Disponível em: Todas Plataformas</span>
+                                        <span>Categorias: Esportes, COOP</span>
+                                    </div>
+                                </div>
+                            </td>
+                            <td>
+                                <div class="card">                           
+                                    <img src="https://image.api.playstation.com/vulcan/ap/rnd/202211/0714/w1kNkaxRk4TBZ2K5mwRq9jPj.jpg" alt="">
+                                    <div class="price-tag">
+                                        <span class="green-border"></span>
+                                        <h1>R$19,90</h1>
+                                    </div>
+                                    <div class="card-details" id="019">
+                                        <h3>The Witcher 3: Wild Hunt</h3>
+                                        <br>
+                                        <span>Disponível em: Todas Plataformas</span>
+                                        <span>Categorias: Mundo Aberto, Aventura</span>
+                                    </div>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <div class="card">                           
+                                    <img src="https://img.poki.com/cdn-cgi/image/quality=78,width=600,height=600,fit=cover,f=auto/12a0ed7c6bc09b73d6558c6f69ed7f5f.png" alt="">
+                                    <div class="price-tag">
+                                        <span class="green-border"></span>
+                                        <h1>R$125,90</h1>
+                                    </div>
+                                    <div class="card-details" id="020">
+                                        <h3>Minecraft</h3>
+                                        <br>
+                                        <span>Disponível em: Todas Plataformas</span>
+                                        <span>Categorias: Infantil, COOP</span>
+                                    </div>
+                                </div>
+                            </td>
+                            <td>
+                                <div class="card">                           
+                                    <img src="https://cdn.akamai.steamstatic.com/steam/apps/1151640/capsule_616x353.jpg?t=1635442187" id="008">
+                                    <div class="price-tag">
+                                        <span class="green-border"></span>
+                                        <h1>R$89,90</h1>
+                                    </div>
+                                    <div class="card-details"  id="008">
+                                        <h3>Horizon Zero Dawn</h3>
+                                        <br>
+                                        <span>Disponível em: Todas Plataformas</span>
+                                        <span>Categorias: Mundo Aberto, Aventura</span>
+                                    </div>
+                                </div>
+                            </td>
+                            <td>
+                                <div class="card">                           
+                                    <img src="https://assets.nintendo.com/image/upload/c_fill,w_1200/q_auto:best/f_auto/dpr_2.0/ncom/pt_BR/dlc/switch-dlc/dragon-ball-fighterz-dlc/rom-bundle/dragon-ball-fighterz-ultimate-edition/image" alt="">
+                                    <div class="price-tag">
+                                        <span class="green-border"></span>
+                                        <h1>R$249,90</h1>
+                                    </div>
+                                    <div class="card-details">
+                                        <h3>Pokemon Legends Arceus</h3>
+                                        <br>
+                                        <span>Disponível em: Nintendo Switch</span>
+                                        <span>Categorias: Exploração e Ação</span>
+                                    </div>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <div class="card">                           
+                                    <img src="https://assets.nintendo.com/image/upload/c_fill,w_1200/q_auto:best/f_auto/dpr_2.0/ncom/pt_BR/games/switch/p/pokemon-legends-arceus-switch/hero" alt="">
+                                    <div class="price-tag">
+                                        <span class="green-border"></span>
+                                        <h1>R$299,00</h1>
+                                    </div>
+                                    <div class="card-details">
+                                        <h3>Pokemon Legend: Arceus</h3>
+                                        <br>
+                                        <span>Disponível em: Todas Plataformas</span>
+                                        <span>Categorias: Infantil, COOP</span>
+                                    </div>
+                                </div>
+                            </td>
+                            <td>
+                                <div class="card">                           
+                                    <img src="https://assets.nintendo.com/image/upload/c_fill,w_1200/q_auto:best/f_auto/dpr_2.0/ncom/pt_BR/games/switch/h/hollow-knight-switch/hero" alt="">
+                                    <div class="price-tag">
+                                        <span class="green-border"></span>
+                                        <h1>R$69,90</h1>
+                                    </div>
+                                    <div class="card-details" id="022">
+                                        <h3>Hollow Knight</h3>
+                                        <br>
+                                        <span>Disponível em: Todas Plataformas</span>
+                                        <span>Categorias: Ação, Aventura</span>
+                                    </div>
+                                </div>
+                            </td>
+                            <td>
+                                <div class="card">                           
+                                    <img src="https://s2.glbimg.com/h37awtE_QCrCUq86q5_Ok5YRDR8=/0x0:695x521/984x0/smart/filters:strip_icc()/i.s3.glbimg.com/v1/AUTH_08fbf48bc0524877943fe86e43087e7a/internal_photos/bs/2021/J/o/vIaLg5TFSs08OaoiR6eA/2014-12-08-terraria.png" alt="">
+                                    <div class="price-tag">
+                                        <span class="green-border"></span>
+                                        <h1>R$24,90</h1>
+                                    </div>
+                                    <div class="card-details" id="002">
+                                        <h3>Terraria</h3>
+                                        <br>
+                                        <span>Disponível em: Todas Plataformas</span>
+                                        <span>Categorias: Aventura, Mundo Aberto, 2D</span>
+                                    </div>
+                                </div>
+                            </td>
+                        </tr>
+                    </table>
+
+                </div>
+            </section>
+            <section class="fifth-section" style="margin-top: -70px;">
+                <div class="h1-styles">
+                    <h1>Plataformas</h1> 
+                    <div class="childClass">
+                        <span></span><span></span>
+                    </div>
+                </div>
+                <table>
+                    <tr>
+                        <td>
+                            <img class="plataformass" src="../../../assets/switch.png" id="switch">
+                        </td>
+                        <td>
+                            <img class="plataformass" src="../../../assets/ps4.png" id="ps4" alt="">                            
+                        </td>
+                        <td>
+                            <img class="plataformass" src="../../../assets/xbox.png" id="xbox" alt="">                         
+                        </td>                            
+                    </tr>
+                </table>
+            </section>          
+        </div>
+    </main>
+
+    <footer>
+        <section id="footer"></section>
+    </footer>
+    <script defer src="script.js"></script>
+    <script src="js/swiper-bundle.min.js"></script>
+    <script src="js/script.js"></script>
+    <script src="../../components/Header-Footer/script.js"></script>
+</body>
+</html>
